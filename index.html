@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Enigma dos numeros</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Enigma dos Numeros</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Inicio</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <!-- <li><a href="#services">Desafios</a></li> -->
+          <li class="dropdown"><a href="#services"><span>Desafios</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="D1.html">Desafio 1</a></li>
+              <li><a href="D2.html">Desafio 2</a></li>
+              <li><a href="D3.html">Desafio 3</a></li>
+              <li><a href="D4.html">Desafio 4</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="#portfolio">Autor</a></li>
+          <li><a href="#pricing">Livro</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Desafios</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a> -->
+            <!-- <ul>
+              <li><a href="#">Desafio 1</a></li>
+              <li><a href="#">Desafio 2</a></li>
+              <li><a href="#">Desafio 3</a></li>
+              <li><a href="#">Desafio 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#team">Time</a></li>
+         
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1>O Homem que Calculava</h1>
+            <p>"A matemática é a linguagem com a qual Deus escreveu o universo."
+
+              Essa citação reflete a ideia central do livro sobre como a matemática pode ser uma ferramenta poderosa para entender e explorar o mundo ao nosso redor.</p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">Vamos lá</a>
+              <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/xd.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container" data-aos="zoom-in">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 120
+                },
+                "1200": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <!-- <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div> -->
+
+    </section><!-- /Clients Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Sobre o Trabalho</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              Nosso trabalho falará sobre o livro "O Homem que Calculava" e seus demais desafios que foram passados pelo protagonista Beremiz Samir.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> <span>Utilizamos Bootstrap.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Utilizamos CSS e Java Script</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Utilizamos HTML</span></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <p>Neste trabalho você ira ver sobre uma parte do livro "O Homem que Calculava". Nos iremos citar alguns dos desafios passados por Beremiz Samir que é o protagonista do livro, Os desafios serão: "O Tigre e o Chacal", "O valor da escrava", "Amizade Quadratica", "O Problema das Abelhas". </p>
+            <!-- <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a> -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <section id="skills" class="skills section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+
+          <div class="col-lg-6 d-flex align-items-center">
+            <img src="assets/img/x5.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+
+            <h3>Aproveitamentos que tivemos na criação do site</h3>
+            <p class="fst-italic">
+             Aqui organizamos nossos aproveitamentos de cada recurso utilizado na criacao do site utilizando porcentagem.
+            </p>
+
+            <div class="skills-content skills-animation">
+
+              <div class="progress">
+                <span class="skill"><span>HTML</span> <i class="val">65%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>CSS</span> <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>JavaScript</span> <i class="val">25%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Bootstrap</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Desafios</h2>
+        <p>Aqui mostraremos os desafios passados por Beremiz durante sua jornada </p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-animal icon"></i></div>
+              <h4><a href="D1.html" class="stretched-link">Tigre e Chacal</a></h4>
+              <p>Clique aqui para descobrir mais sobre o desafio "Tigre e Chcal"</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi--box-circles icon"></i></div>
+              <h4><a href="D2.html" class="stretched-link">Amizade Quadratica</a></h4>
+              <p>Clique aqui para descobrir mais sobre o desafio "Amizade Quadratica"</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi--week icon"></i></div>
+              <h4><a href="D3.html" class="stretched-link">O Valor da Escrava</a></h4>
+              <p>Clique aqui para descobrir mais sobre o desafio "O Valor da Escrava"</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi- icon"></i></div>
+              <h4><a href="D4.html" class="stretched-link">O Problema das Abelhas</a></h4>
+              <p>Clique aqui para descobrir mais sobre o desafio "O Problema das Abelhas"</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="assets/img/x6.jpg" alt="">
+
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9 text-center text-xl-start">
+            <!-- <h3>Call To Action</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+          </div>
+          <div class="col-xl-3 cta-btn-container text-center">
+            <!-- <a class="cta-btn align-middle" href="#">Call To Action</a> -->
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Autor</h2>
+        <p>Malba Tahan, pseudônimo de Júlio César de Mello e Souza</p>
+        <br> <br>
+
+        <section id="why-us" class="section why-us light-background" data-builder="section">
+
+          <div class="container-fluid">
+    
+            <div class="row gy-4">
+    
+              <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+    
+                <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+    
+                  <div class="faq-item faq-active">
+    
+                    <h3><span>01</span>Malba Tahan</h3>
+                    <div class="faq-content">
+                      <p>Malba Tahan é o pseudônimo de Jamil Almansur Haddad, um escritor, matemático e professor brasileiro, nascido em Beirute, Líbano, em 7 de agosto de 1895. Ele imigrou para o Brasil com sua família em 1909, estabelecendo-se em Rio de Janeiro, onde viria a se tornar uma figura importante no cenário literário e educacional brasileiro.</p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                  </div><!-- End Faq item-->
+    
+                  <div class="faq-item">
+                    <h3><span>02</span>Júlio César de Mello e Souza</h3>
+                    <div class="faq-content">
+                      <p>Júlio César de Mello e Souza, mais conhecido pelo pseudônimo Malba Tahan, foi um escritor, matemático e professor brasileiro, nascido em Rio de Janeiro no 6 de junho de 1895 e falecido em 11 de julho de 1974. Ele é especialmente famoso por sua obra literária, que combina histórias de ficção com temas matemáticos, e por sua contribuição ao ensino da Matemática no Brasil.</p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                  </div><!-- End Faq item-->
+    
+                  <div class="faq-item">
+                    <h3><span>03</span>Motivo da criação do "O homem que Calculava"</h3>
+                    <div class="faq-content">
+                      <p>Júlio César de Mello e Souza escreveu o livro "O Homem que Calculava" com a intenção de demonstrar de forma envolvente e lúdica o potencial fascinante da Matemática, além de desmistificar a ideia de que a Matemática é uma disciplina árida e difícil. Como matemático e educador, Mello e Souza estava profundamente interessado em aproximar o público da Matemática de maneira acessível e prazerosa, especialmente para jovens e leitores que normalmente não teriam interesse por números e cálculos.</p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                  </div><!-- End Faq item-->
+    
+                </div>
+    
+              </div>
+    
+              <div class="col-lg-5 order-1 order-lg-2 why-us-img">
+                <img src="assets/img/portfolio/banner-julio.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+              </div>
+            </div>
+    
+          </div> 
+
+
+
+  <!-- <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="assets/img/x6.jpg" alt=""> -->
+
+      <!-- <div class="container"> -->
+
+        <!-- <div class="row" data-aos="zoom-in" data-aos-delay="100"> -->
+          <!-- <div class="col-xl-9 text-center text-xl-start"> -->
+            <!-- <h3>Call To Action</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+          </div>
+          <!-- <div class="col-xl-3 cta-btn-container text-center"> -->
+            <!-- <a class="cta-btn align-middle" href="#">Call To Action</a> -->
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section light-background">
+
+      <!-- Section Title -->
+     
+
+    </section><!-- /Faq 2 Section -->
+     <!-- Why Us Section -->
+     <section id="why-us" class="section why-us light-background" data-builder="section">
+
+      <div class="container-fluid">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+
+            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+              <!-- <h3><span>Um pouco mais sobre o Livro</span></h3> -->
+               <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Sobre o Livro</h2>
+        <p>Aqui vamos falar um pouco sobre a obra "O Homem que Calculava"</p>
+      </div><!-- End Section Title -->
+              <!-- <p>
+                "O Homem que Calculava", escrito por Malba Tahan, é um clássico da literatura brasileira e mundial que mistura a matemática com a magia da narrativa. A história, ambientada no exótico mundo árabe, gira em torno de Beremiz Samir, um homem com habilidades matemáticas extraordinárias, que usa sua inteligência para resolver desafios e intrigas de forma engenhosa.
+              </p> -->
+            </div>
+
+            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="faq-item faq-active">
+
+                <h3><span>01</span>O Livro</h3>
+                <div class="faq-content">
+                  <p>"O Homem que Calculava", escrito por Malba Tahan, é um clássico da literatura brasileira e mundial que mistura a matemática com a magia da narrativa. A história, ambientada no exótico mundo árabe, gira em torno de Beremiz Samir, um homem com habilidades matemáticas extraordinárias, que usa sua inteligência para resolver desafios e intrigas de forma engenhosa.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span>02</span>O Protagonista</h3>
+                <div class="faq-content">
+                  <p>Beremiz Samir é o protagonista do livro O Homem que Calculava (1938), escrito por Malba Tahan, pseudônimo do escritor brasileiro Júlio César de Mello e Souza. Beremiz é um personagem fascinante, conhecido por sua incrível habilidade matemática. Ele é descrito como um exímio calculista e resolve problemas complexos com impressionante facilidade e rapidez. Sua trajetória é marcada por aventuras nas quais ele utiliza o raciocínio lógico e o conhecimento matemático para resolver conflitos e situações inusitadas.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span>03</span>Desafios</h3>
+                <div class="faq-content">
+                  <p>O trajeto de Beremiz Samir em O Homem que Calculava é uma jornada marcada pela aplicação da matemática para resolver problemas práticos, sociais e filosóficos que ele encontra ao longo do caminho. Desde o momento em que ele é apresentado como um humilde viajante, até ser reconhecido na corte de Bagdá, seus desafios não se limitam apenas à resolução de questões numéricas, mas também ao uso da lógica e da inteligência para trazer harmonia e justiça em situações que, à primeira vista, parecem insolúveis.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2 why-us-img">
+            <img src="assets/img/x3.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Time</h2>
+        <p>Esses são os criadores do trabalho que vocês acabaram de visitar.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/i8.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Matheus dos Santos da Silva</h4>
+                <span>Programação e auxilio </span>
+                <p>Prodoziu a página inicial e auxiliou na contrução do site</p>
+                <div class="social">
+                  <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
+                  <!-- <a href=""><i class="bi bi-facebook"></i></a> -->
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <!-- <a href=""> <i class="bi bi-linkedin"></i> </a> -->
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/i5.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Marcos Toda</h4>
+                <span>Programação</span>
+                <p>Prodoziu a página sobre o autor e auxiliou na contrução do site
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <!-- <a href=""> <i class="bi bi-linkedin"></i> </a> -->
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/i7.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Lucas de Freitas</h4>
+                <span>Auxilio e programação</span>
+                <p>Prodoziu a página de contato e auxiliou na costrução do site</p>
+                <div class="social">
+                  <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a> -->
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <!-- <a href=""> <i class="bi bi-linkedin"></i> </a> -->
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/i6.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Murilo Kimura</h4>
+                <span>Criatividade e programação</span>
+                <p>Produziu a pagina sobre o livro e auxiliou na contrução do site</p>
+                <div class="social">
+                  <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a> -->
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <!-- <a href=""> <i class="bi bi-linkedin"></i> </a> -->
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+<center>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/i9.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Kevin Spani</h4>
+                <span>Auxilio</span>
+                <p>Fez parte da produção dos desafios</p>
+                <div class="social">
+                  <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a> -->
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <!-- <a href=""> <i class="bi bi-linkedin"></i> </a> -->
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+</center>
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section light-background">
+
+      <!-- Section Title -->
+     
+
+    </section><!-- /Faq 2 Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contato</h2>
+        <p>Caso você tenha alguma duvida ou alguma critica/sugestão, você poderá nos enviar utilizando esse formulario</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Endereço</h3>
+                  <p>Rua das flores Nº56</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Numero de Telefone</h3>
+                  <p>+55 11 99999-99999</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>enigmadnumeros@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Nome</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Assunto</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Escreva seu texto</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span></span> <strong class="px-1 sitename"></strong> <span>Murilo Kimura, Matheus dos Santos, Lucas de Freitas, Marcos Toda & Kevin Spani</span></p>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">Grupo 3</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
